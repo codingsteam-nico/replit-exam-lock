@@ -4,6 +4,8 @@ Hides exam-unfriendly elements of the replit.com editor.
 
 Looks to remove all AI-related features, as well as disable access to the Settings tab to prevent unwanted changes.
 
+![](example_images/comparison.gif)
+
 ### Examples of items removed
 
 - AI Autocomplete
