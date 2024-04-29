@@ -1,0 +1,10 @@
+{
+  "name": "replit-exam-lock",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "./build.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}

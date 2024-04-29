@@ -13,6 +13,7 @@
         "https://*.replit.com/@*/*",
         "https://*.firewalledreplit.com/@*/*"
       ],
+      "js": ["content/nodes.js", "content/main.js"],
       "css": ["content/styles.css"],
       "world": "MAIN"
     }
