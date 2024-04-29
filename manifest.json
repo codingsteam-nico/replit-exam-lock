@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Replit Exam Lock",
   "version": "1.0.0",
-  "description": "Hides exam-unfriendly elements from the replit.com editor",
+  "description": "Hides exam-unfriendly elements from the replit.com editor\nhttps://github.com/codingsteam-nico/replit-exam-lock",
   "author": "nico@codingsteam.com",
   "icons": {
     "512": "icons/512.png"
