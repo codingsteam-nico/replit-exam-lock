@@ -1,4 +1,4 @@
-# replit-exam-lock
+# <img src="icons/512.png" width="32"/> replit-exam-lock
 
 Hides exam-unfriendly elements of the replit.com editor.
 
