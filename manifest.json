@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Replit Exam Lock",
+  "version": "1.0.0",
+  "description": "Hides exam-unfriendly elements from the replit.com editor",
+  "author": "nico@codingsteam.com",
+  "icons": {
+    "512": "icons/512.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.replit.com/@*/*",
+        "https://*.firewalledreplit.com/@*/*"
+      ],
+      "css": ["content/styles.css"],
+      "world": "MAIN"
+    }
+  ]
+}

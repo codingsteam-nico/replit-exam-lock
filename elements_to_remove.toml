@@ -1,0 +1,47 @@
+# Tab bar, new tab "+" button
+.css-1jxfqao
+
+# Tab bar, extra option "..." button
+.css-113zd6v
+
+# Tab bar, right-click menu
+.css-1o92kwk
+
+# Editor, empty file AI generate prompt
+.css-a3ac2g
+
+# Editor, inline AI generate prompt
+.css-1w3tfwx
+
+# Editor, inline AI generate popup
+.css-t5d0fj
+
+# Editor, bottom bar AI button
+.css-14hsnor > .css-36v8q4:nth-of-type(1)
+
+# Editor, bottom bar file type button
+.css-14hsnor > .css-36v8q4:nth-of-type(2)
+
+# Header, navigation menu overlay
+.css-125g92
+
+# Header, repl info overlay
+.css-8zni13
+
+# Header, repl resources overlay
+.css-jrh22y
+
+# Header, top right section
+.css-195num
+
+# Left sidebar, Search
+.css-10hnlfl
+
+# Left sidebar, Tools
+.css-1tosrz5 > .css-36v8q4:nth-of-type(2)
+
+# Console, "Ask AI" button
+.css-19c0wey
+
+# Shell, inline AI generate prompt
+.css-5hh8o6
