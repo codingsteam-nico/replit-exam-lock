@@ -16,11 +16,25 @@
 # Editor, inline AI generate popup
 .css-t5d0fj
 
+# Editor, inline AI explain popup
+.css-104vpr
+
+# Editor, code highlight popup
+.css-o1mq6
+
 # Editor, bottom bar AI button
 .css-14hsnor > .css-36v8q4:nth-of-type(1)
 
 # Editor, bottom bar file type button
 .css-14hsnor > .css-36v8q4:nth-of-type(2)
+
+# Editor, right click menu, AI section
+.css-1812gh1
+
+# Editor, right click menu, Generate/Explain/Modify options
+.css-s1go71[data-cy="context-menu-GenerateCode"]
+.css-s1go71[data-cy="context-menu-ExplainCode"]
+.css-s1go71[data-cy="context-menu-TransformCode"]
 
 # Header, navigation menu overlay
 .css-125g92
