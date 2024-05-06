@@ -54,6 +54,9 @@
 # Left sidebar, Tools
 .css-1tosrz5 > .css-36v8q4:nth-of-type(2)
 
+# Left sidebar, Replit Core advert
+.css-1p029iz
+
 # Console, "Ask AI" button
 .css-19c0wey
 
