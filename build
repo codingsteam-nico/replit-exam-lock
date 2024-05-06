@@ -1,0 +1,24 @@
+#!/bin/sh
+
+DEFINITION_FILE=elements_to_remove.toml
+CSS_FILE=content/styles.css
+ZIP_FILE=replit-exam-lock.zip
+[ ! $# -eq 0 ] && [ $1 = "-date" ] && ZIP_FILE=$(basename "$ZIP_FILE" .zip)-$(date +"%y%m%d%H%M%S").zip
+
+[ -d "content" ] && rm -r "content"
+mkdir "$(dirname $CSS_FILE)"
+touch "$CSS_FILE"
+
+while read line; do
+  case "$line" in
+    \#\ *) echo "/* ${line#* } */" >> "$CSS_FILE";;
+    ?*) echo "$line", >> "$CSS_FILE";;
+  esac
+done <$DEFINITION_FILE
+
+truncate -s-2 "$CSS_FILE"
+echo " {\n  display: none !important;\n}" >> "$CSS_FILE"
+echo "Built \"$CSS_FILE\" from definitions"
+
+zip -qr "$ZIP_FILE" manifest.json LICENSE content/ icons/
+echo "Zipped \"$ZIP_FILE\""
