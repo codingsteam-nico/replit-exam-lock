@@ -52,8 +52,11 @@
 # Left sidebar, Search
 .css-10hnlfl
 
-# Left sidebar, Tools
-.css-1tosrz5 > .css-36v8q4:nth-of-type(2)
+# Left sidebar, Tools recent
+.css-1aictdn
+
+# Left sidebar, Tools other than Console, Debugger, Shell
+.css-1umah9p:not(:nth-child(6), :nth-child(8), :nth-child(16))
 
 # Left sidebar, Replit Core advert
 .css-1p029iz
