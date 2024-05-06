@@ -19,6 +19,13 @@
       ],
       "css": ["content/styles.css"],
       "world": "MAIN"
+    },
+    {
+      "matches": [
+        "https://*.replit.com/team/*",
+        "https://*.firewalledreplit.com/team/*"
+      ],
+      "css": ["content/team.css"]
     }
   ]
 }

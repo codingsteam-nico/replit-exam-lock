@@ -63,3 +63,23 @@
 
 # Shell, inline AI generate prompt
 .css-5hh8o6
+
+
+[team.css]
+# Header
+.css-1abg1kr
+
+# Nav toggle button
+.css-1264ivl
+
+# Navigation menu
+.css-lh2340
+
+# Teams for Education data export
+.css-1jqmscf
+
+# Team profile
+.team-profile-header
+
+# Teams deprecation warning
+.css-9bhm5v
