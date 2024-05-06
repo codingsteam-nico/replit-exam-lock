@@ -1,24 +1,30 @@
-#!/bin/sh
+#!/bin/bash
 
 DEFINITION_FILE=elements_to_remove.toml
-CSS_FILE=content/styles.css
+CONTENT_DIR=content
 ZIP_FILE=replit-exam-lock.zip
 [ ! $# -eq 0 ] && [ $1 = "-date" ] && ZIP_FILE=$(basename "$ZIP_FILE" .zip)-$(date +"%y%m%d%H%M%S").zip
 
-[ -d "content" ] && rm -r "content"
-mkdir "$(dirname $CSS_FILE)"
-touch "$CSS_FILE"
+[ -d "$CONTENT_DIR" ] && rm -r "$CONTENT_DIR"
+mkdir "$CONTENT_DIR"
+
+files=()
 
 while read line; do
   case "$line" in
-    \#\ *) echo "/* ${line#* } */" >> "$CSS_FILE";;
-    ?*) echo "$line", >> "$CSS_FILE";;
+    \[*\]) file="$CONTENT_DIR"/"${line:1:-1}" &&
+      files+=("$file") &&
+      touch "$file";;
+    \#\ *) echo "/* ${line#* } */" >> "$file";;
+    ?*) echo "$line", >> "$file";;
   esac
 done <$DEFINITION_FILE
 
-truncate -s-2 "$CSS_FILE"
-echo " {\n  display: none !important;\n}" >> "$CSS_FILE"
-echo "Built \"$CSS_FILE\" from definitions"
+for file in "${files[@]}"; do
+  truncate -s-2 "$file"
+  echo -e " {\n  display: none !important;\n}" >> "$file"
+  echo "Built \"$file\" from definitions"
+done
 
 zip -qr "$ZIP_FILE" manifest.json LICENSE content/ icons/
 echo "Zipped \"$ZIP_FILE\""
