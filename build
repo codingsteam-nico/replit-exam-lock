@@ -4,6 +4,7 @@ DEFINITION_FILE=elements_to_remove.toml
 CONTENT_DIR=content
 ZIP_FILE=replit-exam-lock.zip
 [ ! $# -eq 0 ] && [ $1 = "-date" ] && ZIP_FILE=$(basename "$ZIP_FILE" .zip)-$(date +"%y%m%d%H%M%S").zip
+[ ! $# -eq 0 ] && [ $1 = "-version" ] && ZIP_FILE=$(basename "$ZIP_FILE" .zip)-v$(grep -Po '"version\": "\K.*?(?=")' manifest.json).zip
 
 [ -d "$CONTENT_DIR" ] && rm -r "$CONTENT_DIR"
 mkdir "$CONTENT_DIR"
