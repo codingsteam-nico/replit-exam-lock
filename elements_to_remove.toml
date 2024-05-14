@@ -3,13 +3,13 @@
 .css-b26pld
 
 # Tab bar, extra option "..." button
-.css-1vf76s3
+.css-emv3nn
 
 # Tab bar, right-click menu
 .css-1o92kwk
 
 # Editor, empty file AI generate prompt
-.css-a3ac2g
+.css-cl14y1
 
 # Editor, inline AI generate prompt
 .css-1w3tfwx
@@ -47,16 +47,16 @@
 .css-iuceai
 
 # Header, top right section
-.css-195num
+.css-3cooaj
 
 # Left sidebar, Search
 .css-10hnlfl
 
 # Left sidebar, Tools recent
-.css-1aictdn
+.css-6a5q8h
 
 # Left sidebar, Tools other than Console, Debugger, Shell
-.css-1umah9p:not(:nth-child(6), :nth-child(8), :nth-child(16))
+.css-13bs8ix:not(:nth-child(6), :nth-child(8), :nth-child(16))
 
 # Left sidebar, Replit Core advert
 .css-1p029iz
