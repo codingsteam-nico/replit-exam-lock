@@ -1,5 +1,7 @@
 # <img src="icons/512.png" width="32"/> replit-exam-lock
 
+[Chrome Web Store](https://chromewebstore.google.com/detail/replit-exam-lock/pahlkdommjggfaiocbodcmbpokmpccie)
+
 Hides exam-unfriendly elements of the replit.com editor.
 
 Looks to remove all AI-related features, as well as disable access to the Settings tab to prevent unwanted changes.
